@@ -39,15 +39,33 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-doc'
   gem 'pry-rails'
+
+  # Test
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'rspec-rails'
 end
 
 group :development do
   # Debugger
-  gem 'web-console'
   gem 'listen'
-  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'web-console'
+
+  # CLI
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen'
+  gem 'spring-commands-rspec'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'chromedriver-helper'
+  gem 'launchy'
+  gem 'shoulda-matchers',
+      git: 'https://github.com/thoughtbot/shoulda-matchers.git',
+      branch: 'rails-5'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 
