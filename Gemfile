@@ -12,7 +12,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Database
 gem 'pg', '>= 0.18', '< 2.0'
-# gem 'redis', '~> 4.0'
+gem 'redis', '~> 4.0'
+gem 'redis-rails'
 
 # Server
 gem 'puma', '~> 3.11'
