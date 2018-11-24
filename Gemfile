@@ -53,12 +53,23 @@ group :development, :test do
   gem 'capistrano-rbenv'
   gem 'capistrano-resque', require: false
   gem 'capistrano3-puma'
+
 end
 
 group :development do
   # Debugger
   gem 'listen'
   gem 'web-console'
+
+  # Code analyze
+  gem 'brakeman', require: false
+  gem 'bullet'
+  gem 'rails_best_practices'
+  gem 'reek'
+  gem 'rubocop-rails_config'
+  gem 'rubocop', '~> 0.60.0', require: false
+  gem 'scss_lint', require: false
+  gem 'slim_lint'
 
   # CLI
   gem 'spring'
@@ -76,7 +87,6 @@ group :test do
   gem 'vcr'
   gem 'webmock'
 end
-
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
