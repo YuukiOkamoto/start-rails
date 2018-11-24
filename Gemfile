@@ -36,10 +36,11 @@ gem 'redis-rails'
 # Server
 gem 'puma', '~> 3.11'
 
-
 # Storage
 gem 'mini_magick'
 
+# Seeds
+gem 'seed-fu'
 
 group :development, :test do
   # Debugger
