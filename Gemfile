@@ -12,6 +12,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Assets
+gem 'bootstrap-sass'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
 gem 'sass-rails'
 gem 'uglifier'
 
