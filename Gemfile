@@ -86,6 +86,7 @@ group :development, :test do
   gem 'faker'
   gem 'rspec-rails'
 
+
   # Deploy
   gem 'capistrano', '3.9.0'
   gem 'capistrano-bundler'
@@ -117,6 +118,9 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen'
   gem 'spring-commands-rspec'
+
+  # Table/Schema
+  gem 'annotate'
 end
 
 group :test do
