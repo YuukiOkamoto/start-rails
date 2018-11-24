@@ -42,7 +42,8 @@ gem 'redis-rails'
 # Server
 gem 'puma', '~> 3.11'
 
-# Storage
+# Upload
+gem 'carrierwave', '~> 1.0'
 gem 'mini_magick'
 
 # Seeds
