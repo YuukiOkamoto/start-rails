@@ -25,6 +25,9 @@ gem 'jbuilder'
 gem 'meta-tags'
 gem 'slim-rails'
 
+# Configuration
+gem 'config'
+
 # Database
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'redis', '~> 4.0'
