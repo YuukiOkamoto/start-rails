@@ -25,6 +25,11 @@ gem 'jbuilder'
 gem 'meta-tags'
 gem 'slim-rails'
 
+# Authentication
+gem 'pundit'
+# gem 'sorcery'
+# gem 'device'
+
 # Configuration
 gem 'config'
 
