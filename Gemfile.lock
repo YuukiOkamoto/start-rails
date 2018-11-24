@@ -118,6 +118,7 @@ GEM
     chromedriver-helper (2.1.0)
       archive-zip (~> 0.10)
       nokogiri (~> 1.8)
+    cocoon (1.2.12)
     code_analyzer (0.4.8)
       sexp_processor
     codeclimate-engine-rb (0.4.1)
@@ -391,6 +392,9 @@ GEM
       activerecord (>= 3.1)
       activesupport (>= 3.1)
     sexp_processor (4.11.0)
+    simple_form (4.1.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     sinatra (2.0.4)
       mustermann (~> 1.0)
       rack (~> 2.0)
@@ -482,6 +486,7 @@ DEPENDENCIES
   capistrano3-puma
   capybara
   chromedriver-helper
+  cocoon
   config
   factory_bot_rails
   faker
@@ -513,6 +518,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   seed-fu
   shoulda-matchers!
+  simple_form
   slim-rails
   slim_lint
   spring

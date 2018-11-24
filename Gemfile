@@ -44,6 +44,7 @@ gem 'seed-fu'
 
 # Form
 gem 'cocoon'
+gem 'simple_form'
 
 group :development, :test do
   # Debugger
