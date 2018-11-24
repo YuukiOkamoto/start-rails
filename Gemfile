@@ -42,6 +42,9 @@ gem 'mini_magick'
 # Seeds
 gem 'seed-fu'
 
+# Form
+gem 'cocoon'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
