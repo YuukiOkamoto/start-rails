@@ -9,6 +9,18 @@ end
 gem 'rails', '~> 5.2.1'
 gem 'mini_racer', platforms: :ruby
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'bootsnap', '>= 1.1.0', require: false
+
+# Assets
+gem 'sass-rails'
+gem 'uglifier'
+
+# UI/UX
+gem 'rails-i18n', '~> 5.1'
+# gem 'turbolinks'
+gem 'jbuilder'
+gem 'meta-tags'
+gem 'slim-rails'
 
 # Database
 gem 'pg', '>= 0.18', '< 2.0'
@@ -18,20 +30,10 @@ gem 'redis-rails'
 # Server
 gem 'puma', '~> 3.11'
 
-# UI/UX
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'jbuilder', '~> 2.5'
-gem 'rails-i18n', '~> 5.1'
-gem 'slim-rails'
-gem 'meta-tags'
-# gem 'turbolinks'
 
 # Storage
 gem 'mini_magick'
 
-# Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   # Debugger
