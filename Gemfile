@@ -50,6 +50,11 @@ gem 'simple_form'
 gem 'paranoia', '~> 2.2'
 gem 'paranoia_uniqueness_validator', '3.1.0'
 
+# Model
+gem 'active_hash'
+gem 'enum_help'
+gem 'virtus'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
