@@ -46,6 +46,10 @@ gem 'seed-fu'
 gem 'cocoon'
 gem 'simple_form'
 
+# Soft delete
+gem 'paranoia', '~> 2.2'
+gem 'paranoia_uniqueness_validator', '3.1.0'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
