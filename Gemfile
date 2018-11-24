@@ -64,6 +64,9 @@ gem 'virtus'
 gem 'validate_url'
 gem 'validates_email_format_of'
 
+# Decorator
+gem 'draper'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
