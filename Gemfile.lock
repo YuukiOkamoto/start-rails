@@ -450,6 +450,11 @@ GEM
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.4.0)
     uniform_notifier (1.12.1)
+    validate_url (1.0.2)
+      activemodel (>= 3.0.0)
+      addressable
+    validates_email_format_of (1.6.3)
+      i18n
     vcr (4.0.0)
     vegas (0.1.11)
       rack (>= 1.0.0)
@@ -538,6 +543,8 @@ DEPENDENCIES
   spring-watcher-listen
   tzinfo-data
   uglifier
+  validate_url
+  validates_email_format_of
   vcr
   virtus
   web-console

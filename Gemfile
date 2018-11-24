@@ -55,6 +55,10 @@ gem 'active_hash'
 gem 'enum_help'
 gem 'virtus'
 
+# Validation
+gem 'validate_url'
+gem 'validates_email_format_of'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
