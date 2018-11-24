@@ -10,6 +10,7 @@ gem 'rails', '~> 5.2.1'
 gem 'mini_racer', platforms: :ruby
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'sinatra'
 
 # Assets
 gem 'bootstrap-sass'
@@ -67,6 +68,9 @@ gem 'validates_email_format_of'
 # Decorator
 gem 'draper'
 
+# Background Job
+gem 'sidekiq'
+
 group :development, :test do
   # Debugger
   gem 'better_errors'
@@ -89,6 +93,7 @@ group :development, :test do
   gem 'capistrano-rails-console'
   gem 'capistrano-rbenv'
   gem 'capistrano-resque', require: false
+  gem 'capistrano-sidekiq'
   gem 'capistrano3-puma'
 
 end
