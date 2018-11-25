@@ -1,0 +1,9 @@
+site:
+  name: サイト名
+  title: タイトル
+  page_description: description
+  page_keywords: キーワード
+  meta:
+    ogp:
+      type: website
+      image_path: /images/og-image.png

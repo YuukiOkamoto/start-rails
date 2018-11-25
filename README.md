@@ -43,6 +43,19 @@
 
 - Pundit
 
+### metaタグ
+
+- meta-tags
+
+default
+- See `app/views/layouts/_meta_tags.html.slim`
+- See `app/helpers/application_helper.rb`
+- See `config/settings.yml`
+
+Per Page
+- See `app/controllers/application_controller.rb`
+- See `config/locales/meta.ja.yml`
+
 ### その他
 
 - EditorConfig

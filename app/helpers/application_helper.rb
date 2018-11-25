@@ -1,31 +1,39 @@
 module ApplicationHelper
   def default_meta_tags
     {
-      site: 'サイト名',
-      title: 'タイトル',
+      site: Settings.site[:name],
       reverse: true,
-      charset: 'utf-8',
-      description: 'description',
-      keywords: 'キーワード',
+      title: Settings.site[:page_title],
+      description: Settings.site[:page_description],
+      keywords: Settings.site[:page_keywords],
       canonical: request.original_url,
       separator: '|',
-      icon: [
-        { href: image_url('favicon.ico') },
-        { href: image_url('icon.jpg'), rel: 'apple-touch-icon', sizes: '180x180', type: 'image/jpg' },
-      ],
-      og: {
-        site_name: 'サイト名',
-        title: 'タイトル',
-        description: 'description',
-        type: 'website',
-        url: request.original_url,
-        image: image_url('ogp.png'),
-        locale: 'ja_JP',
-      },
+      og: default_og,
       twitter: {
-        card: 'summary',
-        site: '@ツイッターのアカウント名',
+        card: Settings.twitter[:card],
+        site: Settings.twitter[:id],
       }
     }
+  end
+
+  def default_og
+    return if no_index?
+    {
+      title: :title,
+      description: :description,
+      type: Settings.site.meta.ogp[:type],
+      url: request.original_url,
+      image: page_og_image,
+      site_name: Settings.site[:name],
+      locale: 'ja_JP'
+    }
+  end
+
+  def page_og_image
+    @page_image || image_url(Settings.site.meta.ogp[:image_path])
+  end
+
+  def no_index?
+    false
   end
 end
