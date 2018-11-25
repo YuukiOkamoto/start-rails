@@ -102,7 +102,11 @@ $ yarn install
 $ cp config/database.yml.default config/database.yml
 ```
 
-*AWSのアクセスキーなどは個別に担当者に聞いてください。*
+- 秘密情報の管理
+
+```
+Credentialsを利用する。担当者に聞いてconfig/master.keyを作成してください。
+```
 
 ### Database creation
 
