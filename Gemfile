@@ -13,7 +13,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'sinatra'
 
 # Assets
-gem 'bootstrap-sass'
+gem 'bootstrap', '~> 4.1.3'
 gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'sass-rails'
