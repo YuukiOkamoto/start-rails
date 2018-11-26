@@ -128,6 +128,7 @@ group :test do
   gem 'capybara'
   gem 'chromedriver-helper'
   gem 'launchy'
+  gem 'selenium-webdriver'
   gem 'shoulda-matchers',
       git: 'https://github.com/thoughtbot/shoulda-matchers.git',
       branch: 'rails-5'
